@@ -30,7 +30,7 @@ const fetchOneCards = async (element) => {
 
 const liste = ["Mewtwo", "Pikachu", "Link"];
 
-onBeforeMount(async () => {
+onBeforeMount(() => {
   liste.forEach(async (element) => {
     await fetchOneCards(element);
   });
